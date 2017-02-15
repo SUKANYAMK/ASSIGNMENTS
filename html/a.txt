@@ -1,0 +1,64 @@
+fayiza@fayiza:~/Desktop$ cd Desktop
+bash: cd: Desktop: No such file or directory
+fayiza@fayiza:~/Desktop$ git clone https://github.com/fayiza/assignments
+Cloning into 'assignments'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+fayiza@fayiza:~/Desktop$ git status
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+fayiza@fayiza:~/Desktop$ cd assignments
+fayiza@fayiza:~/Desktop/assignments$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	form.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+fayiza@fayiza:~/Desktop/assignments$ git add *
+fayiza@fayiza:~/Desktop/assignments$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   form.html
+
+fayiza@fayiza:~/Desktop/assignments$ git commit -m"first commit" 
+[master (root-commit) 2e3100f] first commit
+ 1 file changed, 25 insertions(+)
+ create mode 100644 form.html
+fayiza@fayiza:~/Desktop/assignments$ git commit -m"first commit" 
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+nothing to commit, working directory clean
+fayiza@fayiza:~/Desktop/assignments$ git config --global user.email "you@fayizatc@gmail.com"
+fayiza@fayiza:~/Desktop/assignments$ git config --global user.name "fayiza"
+fayiza@fayiza:~/Desktop/assignments$ git status
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+nothing to commit, working directory clean
+fayiza@fayiza:~/Desktop/assignments$ git commit -m"first commit" On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+nothing to commit, working directory clean
+fayiza@fayiza:~/Desktop/assignments$ git push origin master
+Username for 'https://github.com': fayiza
+Password for 'https://fayiza@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 515 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/fayiza/assignments
+ * [new branch]      master -> master
+fayiza@fayiza:~/Desktop/assignments$ ^C
+
